@@ -1,0 +1,2105 @@
+/* Regular */
+@font-face {
+    font-family: 'Ploni';
+    src: url('fonts/ploni-regular-aaa.woff2') format('woff2'),
+        url('fonts/ploni-regular-aaa.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* DemiBold */
+@font-face {
+    font-family: 'Ploni';
+    src: url('fonts/ploni-demibold-aaa.woff2') format('woff2'),
+        url('fonts/ploni-demibold-aaa.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* UltraBold */
+@font-face {
+    font-family: 'Ploni';
+    src: url('fonts/ploni-ultrabold-aaa.woff2') format('woff2'),
+        url('fonts/ploni-ultrabold-aaa.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Ploni';
+    src: url('fonts/ploni-light-aaa.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "ploni";
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #1e1e1e;
+}
+
+html {
+    direction: rtl;
+    text-align: right;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body .container.home,
+body .container {
+    background-image: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5.3rem 3.6rem;
+    background-color: #faf8f5;
+}
+
+.container.home,
+.container {
+    background-color: #fff;
+    background-image: url(../assets/WaveWelcome.svg), url(../assets/WaveFooter.svg);
+    background-size: 100%, 100%;
+    background-position: 0 7rem, center bottom;
+    background-repeat: no-repeat;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container.searchResults .content {
+    justify-content: flex-start;
+}
+
+body .container.home .content,
+body .container .content {
+    align-items: center;
+    gap: 0;
+    margin-top: 0;
+}
+
+.container.home .content,
+.container .content {
+    margin-top: 6rem;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: calc(100vh - 7rem);
+    padding-top: 0;
+    gap: 2rem;
+}
+
+body .container.home .wrapMiddleContent,
+body .container .wrapMiddleContent {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 35px;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0 4rem 0;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch {
+    display: flex;
+    border-radius: 50rem;
+    overflow: hidden;
+    box-shadow: 0 2px 22px #0000001c;
+    width: 90%;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch.current {
+    background: #e6d2ff;
+    transition: background ease 200ms, color ease 200ms;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch {
+    padding: 2.2rem 0 2.2rem 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button;
+}
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch.current h4 {
+    font-weight: 600;
+    color: #9747ff;
+    transition: background ease 200ms, color ease 200ms;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch h4 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .frontalSwitch {
+    padding: 2.2rem 0 2.2rem 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .frontalSwitch h4 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade {
+    margin-top: 0;
+    margin-right: -3.6rem;
+    margin-left: -3.6rem;
+    overflow: hidden;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider::-webkit-scrollbar {
+    display: none;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider {
+    display: flex;
+    height: auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    width: auto;
+    overflow: hidden;
+    overflow-x: scroll !important;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 2.2rem;
+    padding-bottom: 3rem;
+    padding-right: 3.6rem;
+    padding-top: 1rem;
+    margin-left: 0rem;
+    gap: 0;
+    padding-left: 3.6rem;
+    scroll-behavior: smooth;
+}
+
+.slider {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide.current {
+    background: #e6d2ff;
+    transition: background ease 200ms, color ease 200ms;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide {
+    width: auto;
+    height: 3.8rem;
+    aspect-ratio: auto;
+    margin-left: 1.3rem;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px #00000021;
+    background: #fff;
+    transition: background ease 200ms, color ease 200ms;
+    position: relative;
+    padding: 0 2.2rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide .gradeContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow {
+    margin-top: 0;
+}
+
+.container.home .content .sliderPopular,
+.container.home .content .sliderRecommend,
+.container .content .sliderPopular,
+.container .content .sliderRecommend {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 5.5rem;
+    padding-top: 0rem;
+    background: #fff;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.searchResults .wrapGrey {
+    background: #f6f6f6;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: calc(100% - 2rem);
+    border-radius: 1.7rem;
+    position: relative;
+    overflow: visible;
+    margin-top: 0rem;
+    padding-top: 3.5rem;
+    border: 0px solid #f2f2f2;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails {
+    width: 70%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* transform: translateY(25%); */
+    /* height: 17rem; */
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0.7;
+    flex-direction: column;
+    /* position: absolute; */
+    width: calc((100% - 19.7rem) / 2);
+    padding-right: 2rem;
+    transform: translateY(-10%);
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .wrapService {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .wrapService>* {
+    flex: 1;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service .wrapLight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding-top: 0rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service .wrapLight .light.on {
+    background: #25d366;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service .wrapLight .light {
+    width: 1.4rem;
+    height: 1.4rem;
+    background: #ddd;
+    border-radius: 10rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    /* transform: translateY(-20%); */
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .image {
+    width: 17.7rem;
+    height: 17.7rem;
+    overflow: hidden;
+    border-radius: 50rem;
+    border: #fff 6px solid;
+    box-shadow: none;
+}
+
+.profile-image-wrapper {
+    /* position: relative; */
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .image img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+img {
+    border-style: none;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip {
+    padding-right: 2.2rem;
+    padding-left: 2.2rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    /* margin-top: -5rem; */
+    text-align: right;
+    width: 150%;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherNAme {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.container.home .content h3,
+.container .content h3 {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherSub {
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-bottom: 0rem;
+    border-bottom: #97979721 0px solid;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .teacherLine {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .teacherLine span.titlegraduate {
+    font-weight: 600;
+    display: inline-block;
+    background: #dde8ff url(https://lessoons.co.il/v3/assets/newDesign/searchpage/graduation-hat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    width: 21px;
+    height: 21px;
+    border-radius: 3rem;
+    margin-left: 0.5rem;
+    position: relative;
+    right: 0;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .capsule {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .capsule .teacherLine.btnPurple {
+    background: #dde8ff;
+    color: #548cff;
+    padding: 5px 3px;
+    width: auto;
+    text-align: center;
+    gap: 0.5rem;
+    border-radius: 9px;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .teacherLine {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore h4.descWide {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 0rem;
+    display: inline-block;
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .sendWhatsappTeacher {
+    width: 100%;
+    display: flex;
+    background: #25d366;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 19% 1.2rem 0;
+    position: relative;
+    transform: translateY(0);
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.openDialerBtn {
+    background: #548CFF !important;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .sendWhatsappTeacher span.whatsIcon {
+    width: 30%;
+    height: 8.5rem;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    background-image: url(https://lessoons.co.il/v3/assets/newDesign/searchpage/waveAnimation.svg);
+    background-size: 100% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    translate: 0;
+    animation: wave 2s linear infinite;
+}
+
+.openDialerBtn span.whatsIcon {
+    filter: hue-rotate(46deg);
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .sendWhatsappTeacher span.whatsIcon2 {
+    width: 41%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 2.4rem;
+}
+
+.myContacts {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    min-width: 200px;
+    padding-left: 30px;
+}
+
+.fa-brands,
+.fab {
+    font-weight: 400;
+}
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands";
+}
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fa-solid,
+.fab,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .linkProfile {
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-bottom: 1px solid;
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a {
+    background-color: transparent;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: auto;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn.disabled {
+    background: #ededed;
+    color: #000;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn {
+    flex: 0.65;
+    background: #548cff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons>button {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn.disabled img {
+    filter: invert(0);
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn img {
+    filter: invert(1);
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .leftBtn {
+    flex: 1.35;
+    background: #548cff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .leftBtn img {
+    filter: invert(1);
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .paginationBtns {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    gap: 1.8%;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    gap: 1.8%;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .paginationBtns button.pageNumButton.active {
+    color: #fff;
+    background: #548cff;
+}
+
+.container.searchResults .content .wrapMiddleContent .paginationClass .paginationBtns button.pageNumButton {
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    background: #ededed;
+    border-radius: 5px;
+    aspect-ratio: 1;
+    flex: 1 0 12.7%;
+    max-width: 12.7428571429%;
+}
+
+.currentPageFeedback {
+    font-size: 13px;
+    color: black;
+    margin: 2.2rem auto 0rem auto;
+    width: 90%;
+    text-align: center;
+}
+
+.container.searchResults .content .wrapMiddleContent .txtSeo {
+    background: #dde8ff;
+    color: #548cff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2.7rem 2.3rem;
+    margin-top: 3rem;
+    border-radius: 3rem;
+}
+
+.fa-brands,
+.fab {
+    font-weight: 400;
+}
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands";
+}
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fa-solid,
+.fab,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd {
+    padding-bottom: 0 !important;
+}
+
+.container.searchResults .content .wrapMiddleContent .sliderPopular .titleButtons .buttonsScroll a {
+    height: 2.8rem;
+    width: 2.8rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    border: #ddd 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 899px) {
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: "ploni";
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        color: #1e1e1e;
+    }
+
+    html {
+        direction: rtl;
+        text-align: right;
+        font-size: 62.5%;
+        -webkit-text-size-adjust: 100%;
+        word-wrap: break-word;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body .container.home,
+    body .container {
+        background-image: none;
+    }
+
+    .container {
+        width: 100vw;
+        min-height: 100vh;
+        padding: 5.3rem 3.6rem;
+        background-color: #faf8f5;
+    }
+
+    .container.home,
+    .container {
+        background-color: #fff;
+        background-image: url(../assets/WaveWelcome.svg), url(../assets/WaveFooter.svg);
+        background-size: 100%, 100%;
+        background-position: 0 7rem, center bottom;
+        background-repeat: no-repeat;
+    }
+
+    div {
+        box-sizing: border-box;
+    }
+
+    .container.searchResults .content {
+        justify-content: flex-start;
+    }
+
+    body .container.home .content,
+    body .container .content {
+        align-items: center;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .container.home .content,
+    .container .content {
+        margin-top: 6rem;
+    }
+
+    .container .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: calc(100vh - 7rem);
+        padding-top: 0;
+        gap: 2rem;
+    }
+
+    .container.searchResults .content .wrapTopContent {
+        align-items: flex-start;
+        min-height: 35rem;
+        transition: translate 300ms linear;
+        translate: 0 0;
+        z-index: 82;
+    }
+
+    body .container.home .wrapTopContent,
+    body .container .wrapTopContent {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        padding-top: 18vh;
+        padding-bottom: 18vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapVideoTop.clipMaskTop {
+        clip-path: url(#svgClipTop);
+    }
+
+    body .container.home .wrapVideoTop,
+    body .container .wrapVideoTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 7.2rem);
+        height: calc(100% + 5.3rem);
+        margin: -5.3rem -3.6rem;
+        margin-bottom: 0;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapVideoTop:before {
+        content: "";
+        background: linear-gradient(0deg, #0000008c 10%, #0000 60%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapVideoTop video {
+        object-position: center;
+    }
+
+    body .container.home .wrapVideoTop video,
+    body .container .wrapVideoTop video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapCategoryName {
+        transition: translate 300ms linear;
+        position: absolute;
+        color: #fff;
+        bottom: 16%;
+        z-index: 5;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapCategoryName h1.hugeTitle {
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    .container .content h1 {
+        width: 100%;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapCategoryName span.mediumText {
+        line-height: 1;
+    }
+
+    span.mediumText {
+        font-size: 1.8rem;
+    }
+    span.mediumText {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+
+
+
+    body .container.home .wrapMiddleContent,
+    body .container .wrapMiddleContent {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 35px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 0 4rem 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch {
+        display: flex;
+        border-radius: 50rem;
+        overflow: hidden;
+        box-shadow: 0 2px 22px #0000001c;
+        width: 90%;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch.current {
+        background: #e6d2ff;
+        transition: background ease 200ms, color ease 200ms;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch {
+        padding: 2.2rem 0 2.2rem 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button,
+    [type=button],
+    [type=reset],
+    [type=submit] {
+        -webkit-appearance: button;
+    }
+
+    button {
+        background-color: transparent;
+        color: inherit;
+        border-width: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    button,
+    select {
+        text-transform: none;
+    }
+
+    button,
+    input {
+        overflow: visible;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch.current h4 {
+        font-weight: 600;
+        color: #9747ff;
+        transition: background ease 200ms, color ease 200ms;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .onlineSwitch h4 {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .frontalSwitch {
+        padding: 2.2rem 0 2.2rem 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .switchFrontOnline .switch .frontalSwitch h4 {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade {
+        margin-top: 0;
+        margin-right: -3.6rem;
+        margin-left: -3.6rem;
+        overflow: hidden;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider {
+        display: flex;
+        height: auto;
+        padding: 0;
+        scroll-behavior: smooth;
+        width: auto;
+        overflow: hidden;
+        overflow-x: scroll !important;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 2.2rem;
+        padding-bottom: 3rem;
+        padding-right: 3.6rem;
+        padding-top: 1rem;
+        margin-left: 0rem;
+        gap: 0;
+        padding-left: 3.6rem;
+        scroll-behavior: smooth;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide.current {
+        background: #e6d2ff;
+        transition: background ease 200ms, color ease 200ms;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide {
+        width: auto;
+        height: 3.8rem;
+        aspect-ratio: auto;
+        margin-left: 1.3rem;
+        border-radius: 100px;
+        box-shadow: 0px 2px 5px #00000021;
+        background: #fff;
+        transition: background ease 200ms, color ease 200ms;
+        position: relative;
+        padding: 0 2.2rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide .gradeContent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow {
+        margin-top: 0;
+    }
+
+    .container.home .content .sliderPopular,
+    .container.home .content .sliderRecommend,
+    .container .content .sliderPopular,
+    .container .content .sliderRecommend {
+        width: 100%;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult {
+        margin-right: -3.6rem;
+        margin-left: -3.6rem;
+        margin-top: 13rem;
+        padding-top: 0rem;
+        background: #fff;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container.searchResults .wrapGrey {
+        background: #f6f6f6;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: calc(100% - 2rem);
+        border-radius: 1.7rem;
+        position: relative;
+        overflow: visible;
+        margin-top: 0rem;
+        padding-top: 3.5rem;
+        border: 0px solid #f2f2f2;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        transform: translateY(25%);
+        height: 17rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 0.7;
+        flex-direction: column;
+        position: absolute;
+        width: calc((100% - 19.7rem) / 2);
+        padding-right: 2rem;
+        transform: translateY(-30%);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .wrapService {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service {
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .wrapService>* {
+        flex: 1;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service .wrapLight {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        padding-top: 0rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service .wrapLight .light.on {
+        background: #25d366;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .serviceKind .service .wrapLight .light {
+        width: 1.4rem;
+        height: 1.4rem;
+        background: #ddd;
+        border-radius: 10rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg {
+        flex: 1.3;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-75%);
+        flex-direction: unset;
+        height: unset;
+        align-items: unset;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .image {
+        width: 19.7rem;
+        height: 19.7rem;
+        overflow: hidden;
+        border-radius: 50rem;
+        border: #fff 6px solid;
+        box-shadow: none;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .image img {
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+    }
+
+    img {
+        border-style: none;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip {
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin-top: -5rem;
+        text-align: center;
+        width: auto;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherNAme {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .container.home .content h3,
+    .container .content h3 {
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherSub {
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding-bottom: 0rem;
+        border-bottom: #97979721 0px solid;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .teacherLine {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .teacherLine span.titlegraduate {
+        font-weight: 600;
+        display: inline-block;
+        background: #dde8ff url(https://lessoons.co.il/v3/assets/newDesign/searchpage/graduation-hat.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 14px;
+        width: 21px;
+        height: 21px;
+        border-radius: 3rem;
+        margin-left: 0.5rem;
+        position: relative;
+        right: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .capsule {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .capsule .teacherLine.btnPurple {
+        background: #dde8ff;
+        color: #548cff;
+        padding: 5px 12px;
+        width: auto;
+        text-align: center;
+        gap: 0.5rem;
+        border-radius: 9px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore .teacherLine {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDescrip .teacherMore h4.descWide {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-top: 0rem;
+        display: inline-block;
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .sendWhatsappTeacher {
+        width: 77%;
+        display: flex;
+        background: #25d366;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-right: 30%;
+        justify-content: center;
+        align-items: center;
+        padding: 1.7rem 19% 1.7rem 0;
+        position: relative;
+        transform: translateY(0);
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        border-radius: 100px;
+    }
+
+    .openDialerBtn {
+        background: #548CFF !important;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .sendWhatsappTeacher span.whatsIcon {
+        width: 30%;
+        height: 12.5rem;
+        position: absolute;
+        right: -2px;
+        top: 0;
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/searchpage/waveAnimation.svg);
+        background-size: 100% auto;
+        background-position: right;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        translate: 0;
+        animation: wave 2s linear infinite;
+    }
+
+    .openDialerBtn span.whatsIcon {
+        filter: hue-rotate(46deg);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .sendWhatsappTeacher span.whatsIcon2 {
+        width: 41%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        font-size: 2.4rem;
+    }
+
+    .myContacts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .linkProfile {
+        font-weight: 600;
+        font-size: 1.6rem;
+        border-bottom: 1px solid;
+        margin-bottom: 3rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    a {
+        background-color: transparent;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin: auto;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 0.6rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn.disabled {
+        background: #ededed;
+        color: #000;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn {
+        flex: 0.65;
+        background: #548cff;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons>button {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn.disabled img {
+        filter: invert(0);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .rightBtn img {
+        filter: invert(1);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .leftBtn {
+        flex: 1.35;
+        background: #548cff;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .rightLeftButtons .leftBtn img {
+        filter: invert(1);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .paginationBtns {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        gap: 1.8%;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        gap: 1.8%;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .paginationBtns button.pageNumButton.active {
+        color: #fff;
+        background: #548cff;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .paginationClass .paginationBtns button.pageNumButton {
+        font-size: 16px;
+        font-weight: 600;
+        width: auto;
+        height: auto;
+        background: #ededed;
+        border-radius: 5px;
+        aspect-ratio: 1;
+        flex: 1 0 12.7%;
+        max-width: 12.7428571429%;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .txtSeo {
+        background: #dde8ff;
+        color: #548cff;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 2.7rem 2.3rem;
+        margin-top: 3rem;
+        border-radius: 3rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd {
+        margin-right: -3.6rem;
+        margin-left: -3.6rem;
+        margin-top: 1rem;
+        padding-top: 0rem;
+        background: #ffffff;
+        padding-bottom: 4.7rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers {
+        background: #343434;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: calc(100% - 2rem);
+        border-radius: 3rem;
+        position: relative;
+        overflow: visible;
+        margin-top: 2rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        border-top-left-radius: 3rem;
+        overflow: hidden;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .wrapAdWords {
+        width: 52%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+        padding-block-start: 5rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .wrapAdWords span {
+        color: #fff;
+        font-weight: 800;
+        font-size: 3.4rem;
+        line-height: 1.3;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .wrapAdWords span.chacnged {
+        color: #b8b8b8;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .clipImage {
+        position: relative;
+        width: 48%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .clipImage .wrapLogoClip {
+        position: absolute;
+        z-index: 5;
+        bottom: 1rem;
+        left: 1rem;
+        width: 47%;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .clipImage .wrapLogoClip img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .clipImage .imgClipped {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1.32;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .clipImage .imgClipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .adTeachers .clipImage .clipMask {
+        clip-path: url(#svgClip);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        overflow: visible;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider {
+        padding-top: 6rem;
+        margin-left: -1rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider {
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
+        padding-top: 3.5rem;
+        margin-left: -1rem;
+    }
+
+    body .container.home .wrapMiddleContent .sliderPopular .carousel .slider,
+    body .container .wrapMiddleContent .sliderPopular .carousel .slider {
+        margin-left: 0rem;
+        gap: 0;
+        padding-left: 3.6rem;
+        scroll-behavior: smooth;
+    }
+
+    .container.home .content .sliderPopular .slider,
+    .container.home .content .sliderRecommend .slider,
+    .container .content .sliderPopular .slider,
+    .container .content .sliderRecommend .slider {
+        display: flex;
+        height: auto;
+        padding: 0;
+        scroll-behavior: smooth;
+        width: auto;
+        overflow: hidden;
+        overflow-x: scroll !important;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 2.2rem;
+        padding-inline-end: 1.5rem;
+        padding-block-end: 5rem;
+        padding-inline-start: 3.6rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide {
+        margin-left: 4vw;
+        width: 33vw;
+        height: auto;
+        aspect-ratio: 1 / 1.17;
+        min-width: 13.9rem;
+        background: #343434;
+        border: 0px solid #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container.home .content .sliderPopular .slider .slide,
+    .container.home .content .sliderRecommend .slider .slide,
+    .container .content .sliderPopular .slider .slide,
+    .container .content .sliderRecommend .slider .slide {
+        position: relative;
+        display: inline;
+        margin-right: 0;
+        width: 15.6rem;
+        height: auto;
+        aspect-ratio: 1 / 1.217;
+        text-align: center;
+        font-size: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide:before {
+        content: "";
+        background: #000;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide:before {
+        bottom: -17px;
+        filter: blur(17px);
+        opacity: 0.45;
+        border-radius: 50rem;
+        background: #252525;
+    }
+
+    .container.home .content .sliderPopular .slider .slide:before,
+    .container.home .content .sliderRecommend .slider .slide:before,
+    .container .content .sliderPopular .slider .slide:before,
+    .container .content .sliderRecommend .slider .slide:before {
+        content: "";
+        width: 80%;
+        height: 50%;
+        position: absolute;
+        bottom: -11%;
+        background: #000;
+        z-index: 0;
+        right: 10%;
+        filter: blur(17px);
+        opacity: 0.2;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide .numCircle {
+        z-index: 50;
+        right: auto;
+        left: auto;
+        transform: translateY(-50%);
+        width: 6.8rem;
+        height: 6.8rem;
+        overflow: hidden;
+        border: 2px solid #fff;
+        display: block;
+        filter: none;
+        position: absolute;
+        color: #fff;
+        top: 0;
+        border-radius: 5rem;
+        background: #575757;
+        align-items: center;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide .numCircle img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: center;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide .teachersContent {
+        height: 100%;
+        width: 100%;
+        background: #343434;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 10px;
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 2rem;
+        margin-top: 0rem;
+        position: relative;
+        z-index: 10;
+        border: 2px solid #fff;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide .teachersContent h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: start;
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .wrapAdTeachers .carousel.sliderTeachers .slider .slide .teachersContent h4 {
+        position: relative;
+        transform: none;
+        background: #0000;
+        padding: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: start;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+        line-height: 1.1;
+        max-height: 4rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 0;
+        color: #fff;
+        width: 100%;
+    }
+
+    body .container.home .wrapMiddleContent .sliderPopular .carousel .slider div:last-child:after,
+    body .container .wrapMiddleContent .sliderPopular .carousel .slider div:last-child:after {
+        content: "";
+        position: absolute;
+        width: 3.6rem;
+        height: 100%;
+        background: transparent;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult~.wrapSliderAd {
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular .titleButtons {
+        margin-top: 0;
+        align-items: center;
+        margin-left: 1.9rem;
+        margin-right: 2.3rem;
+    }
+
+    .container.home .content .sliderPopular .titleButtons,
+    .container.home .content .sliderRecommend .titleButtons,
+    .container .content .sliderPopular .titleButtons,
+    .container .content .sliderRecommend .titleButtons {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular .titleButtons h3 {
+        font-size: 2.3rem;
+        margin-top: 0rem;
+        line-height: 0.9;
+    }
+
+    body .container.home .wrapMiddleContent .titleButtons h3,
+    body .container .wrapMiddleContent .titleButtons h3 {
+        text-align: start;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular .titleButtons .buttonsScroll {
+        width: 10rem;
+        left: 0;
+    }
+
+    body .container.home .wrapMiddleContent .sliderPopular .titleButtons .buttonsScroll,
+    body .container .wrapMiddleContent .sliderPopular .titleButtons .buttonsScroll {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 7rem;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide {
+        margin-left: 5.5vw;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1 / 1.217;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide .numCircle {
+        position: absolute;
+        z-index: 50;
+        color: #fff;
+        width: 8vw;
+        height: 8vw;
+        top: 0;
+        border-radius: 5rem;
+        background: #575757;
+        transform: translateY(-25%);
+        right: -3px;
+        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide .wrapImageSlider {
+        background: #fff;
+        width: auto;
+        height: 100%;
+        border-radius: 2.2rem;
+    }
+
+    body .container.home .wrapMiddleContent .sliderPopular.goodtoknow .slider .slide .wrapImageSlider,
+    body .container .wrapMiddleContent .sliderPopular.goodtoknow .slider .slide .wrapImageSlider {
+        width: 14.3rem;
+        height: 14.3rem;
+        background: #798bff;
+        border-radius: 50rem;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.home .content .sliderPopular .slider .slide .wrapImageSlider,
+    .container.home .content .sliderRecommend .slider .slide .wrapImageSlider,
+    .container .content .sliderPopular .slider .slide .wrapImageSlider,
+    .container .content .sliderRecommend .slider .slide .wrapImageSlider {
+        overflow: hidden;
+        border-radius: 7px;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide .wrapImageSlider img {
+        height: 100%;
+        width: 48vw;
+        object-fit: cover;
+    }
+
+    body .container.home .wrapMiddleContent .sliderPopular .carousel .slider .slide .wrapImageSlider img,
+    body .container .wrapMiddleContent .sliderPopular .carousel .slider .slide .wrapImageSlider img {
+        border-radius: 0;
+    }
+
+    body .container.home .wrapMiddleContent .sliderPopular.goodtoknow .slider .slide img,
+    body .container .wrapMiddleContent .sliderPopular.goodtoknow .slider .slide img {
+        height: 90%;
+        width: 90%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .container.home .content .sliderPopular .slider .slide .wrapImageSlider img,
+    .container.home .content .sliderRecommend .slider .slide .wrapImageSlider img,
+    .container .content .sliderPopular .slider .slide .wrapImageSlider img,
+    .container .content .sliderRecommend .slider .slide .wrapImageSlider img {
+        height: 100%;
+        width: auto;
+        margin: 0;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.25s ease-in-out;
+        position: relative;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide .happensSliderTitle {
+        margin-top: 0rem;
+        display: flex;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        transform: translateY(-100%);
+        z-index: 50;
+        background: #000;
+        color: #fff;
+        padding-bottom: 0;
+        padding-top: 0;
+        border-bottom-right-radius: 2.2rem;
+        border-bottom-left-radius: 2.2rem;
+        background: linear-gradient(0deg, #000c 10%, #0000 60%);
+        background: #548cff;
+        height: 12rem;
+        padding: 1.5rem 1.2rem;
+        flex-direction: column;
+        max-height: 50%;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide .happensSliderTitle h4 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-align: right;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .wrapSliderAd .carousel .slider .slide .happensSliderTitle h6 {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: right;
+        line-height: 2.6;
+    }
+}
+
+
+
+
+
+
+
+@keyframes wave {
+    0% {
+        translate: 0 -2%;
+    }
+
+    100% {
+        translate: 0 -49%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.searchResults .content .wrapMiddleContent .paginationClass {
+        width: 95%;
+    }
+}
