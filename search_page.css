@@ -272,7 +272,22 @@ h6 {
     background: #e6d2ff;
     transition: background ease 200ms, color ease 200ms;
 }
-
+.container.searchResults .content .wrapMiddleContent .teacherSearchPageTitle {
+    font-size: 2.2em;
+    line-height: normal;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.container.searchResults .content .wrapMiddleContent .searchDesc {
+    color: #777;
+    line-height: 24px;
+    margin: 0 0 20px;
+    background-color: #F4F4F4;
+    padding: 10px;
+}
+.container.searchResults .content .wrapMiddleContent .searchDesc a {
+    color: #0088cc;
+}
 .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide {
     width: auto;
     height: 3.8rem;
@@ -315,7 +330,7 @@ h6 {
 .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult {
     margin-right: 1rem;
     margin-left: 1rem;
-    margin-top: 5.5rem;
+    margin-top: 3.5rem;
     padding-top: 0rem;
     background: #fff;
 }
@@ -809,7 +824,21 @@ a {
     border-radius: 5rem;
     border: #ddd 1px solid;
 }
-
+.topRelatedSubjectsRow {
+    padding: 5px 5px 15px 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DDD;
+    background: #FFF;
+    line-height: normal;
+}
+.topRelatedSubjectsRow a {
+    text-decoration: underline;
+    margin: 0 7px;
+    color: #0088cc;
+}
+.topRelatedSubjectsRow br+a {
+    margin-right: 117px;
+}
 
 
 

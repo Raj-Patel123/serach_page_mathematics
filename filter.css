@@ -62,7 +62,7 @@ h6 {
 }
 
 .section-filters {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .filter-item__trigger {
@@ -757,8 +757,6 @@ h6 {
     text-transform: none;
     position: static;
 }
-
-
 
 
 
