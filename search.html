@@ -94,6 +94,42 @@
 
 <body>
     <div class="container searchResults">
+        <div class="header headerDynamic " style="transform: none;">
+            <div class="shadowBox" style="
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: rgb(0 0 0 / 8%);
+                        top: 0px;
+                        left: 0px;
+                        display: block;
+                        z-index: -1;
+                "></div>
+            <a href="/" class="logo">
+                <img src="https://s3.amazonaws.com/static.toptiz.com/images/i4-math.svg">
+            </a>
+            <div class="innerNav">
+                <div class="iconSearch" onclick="openSearch();"></div>
+                <div class="openMenu" onclick="openMenu()">
+                    <img src="https://lessoons.co.il/v3/assets/newDesign/MenuWhite.svg">
+                </div>
+            </div>
+            <video id="upperVideo" autoplay="" loop="" muted="" playsinline="">
+                <source src="https://s3.amazonaws.com/static.toptiz.com/images/i2083.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <div class="header">
+            <a href="/" class="logo">
+                <img src="https://s3.amazonaws.com/static.toptiz.com/images/i4-math.svg">
+            </a>
+            <div class="innerNav">
+                <div class="iconSearch" onclick="openSearch();"></div>
+                <div class="openMenu" onclick="openMenu()">
+                    <img src="https://lessoons.co.il/v3/assets/newDesign/MenuWhite.svg">
+                </div>
+            </div>
+        </div>
         <div role="main" class="main content" id="searchTeachersForm">
             <div class="wrapTopContent mobileOnly">
                 <div class="wrapVideoTop clipMaskTop">
@@ -19535,7 +19571,7 @@
                             </div>
                             <div class="topRelatedSubjectsRow">
                                 <strong>חיפושים קשורים:</strong>
-                                 <a href="/מורה-פרטי/תחום/מתמטיקה-3-יחידות">מורה פרטי
+                                <a href="/מורה-פרטי/תחום/מתמטיקה-3-יחידות">מורה פרטי
                                     למתמטיקה 3 יחידות</a>
                                 <a href="/מורה-פרטי/תחום/מתמטיקה-4-יחידות">מורה פרטי למתמטיקה 4 יחידות</a>
                                 <a href="/מורה-פרטי/תחום/מתמטיקה-5-יחידות">מורה פרטי למתמטיקה 5 יחידות</a>
@@ -20433,5 +20469,42 @@
 
 <script
     src="https://platform.lessoons.co.il//index.php?url=js-css/js&f=teachers%2Fpage-js%2Findex.js&min=0&sid=1752832296"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const floatingDiv = document.querySelector(".headerDynamic");
 
+        window.addEventListener("scroll", function () {
+            // Calculate the viewport height
+            const viewportHeight = window.innerHeight;
+
+            // Calculate the scroll position in pixels
+            const scrollPosition = window.scrollY;
+
+            // Calculate the scroll position as a percentage of the viewport height
+            const scrollPercentage = (scrollPosition / viewportHeight) * 100;
+
+            // Check if the scroll percentage is greater than or equal to 60
+            if (scrollPercentage >= 60) {
+                floatingDiv.style.transform = "none";
+            } else {
+                floatingDiv.style.transform = "translateY(-101%)";
+            }
+        });
+    });
+
+    function getScrollPosition() {
+        // For modern browsers
+        if (window.pageYOffset !== undefined) {
+            return window.pageYOffset + (12.5 * parseFloat(getComputedStyle(document.documentElement).fontSize));
+        }
+
+        // For older browsers
+        var supportPageOffset = document.documentElement.scrollTop !== undefined;
+        var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+
+        return (supportPageOffset ?
+            document.documentElement.scrollTop :
+            (isCSS1Compat ? document.body.scrollTop : 0)) + (12.5 * parseFloat(getComputedStyle(document.documentElement).fontSize));
+    }
+</script>
 </html>
