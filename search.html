@@ -19,7 +19,7 @@
 
         @media (max-width: 899px) {
             .mobileOnly {
-                display: inherit !important;
+                display: flex !important;
                 /* or block if you want full width */
             }
 
@@ -94,7 +94,7 @@
 
 <body>
     <div class="container searchResults">
-        <div class="header headerDynamic " style="transform: none;">
+        <div class="header headerDynamic mobileOnly" style="transform: none;">
             <div class="shadowBox" style="
                         position: absolute;
                         width: 100%;
@@ -119,7 +119,7 @@
             </video>
 
         </div>
-        <div class="header">
+        <div class="header mobileOnly">
             <a href="/" class="logo">
                 <img src="https://s3.amazonaws.com/static.toptiz.com/images/i4-math.svg">
             </a>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div role="main" class="main content" id="searchTeachersForm">
-            <div class="wrapTopContent mobileOnly">
+            <div class="wrapTopContent ">
                 <div class="wrapVideoTop clipMaskTop">
                     <video id="upperVideo" autoplay="" loop="" muted="" playsinline="">
                         <source src="https://s3.amazonaws.com/static.toptiz.com/images/i2083.mp4" type="video/mp4">
@@ -139,28 +139,16 @@
                 </div>
                 <div class="wrapCategoryName">
                     <h1 style="flex-direction: column;display: flex;" class="hugeTitle">
-                        <span class="mediumText" style="color: ">
-                            <font dir="auto" style="vertical-align: inherit;">
-                                <font dir="auto" style="vertical-align: inherit;">Private tutor for</font>
-                            </font>
-                        </span>
-                        <span class="hugeTitle" style="color: ">
-                            <font dir="auto" style="vertical-align: inherit;">
-                                <font dir="auto" style="vertical-align: inherit;">Mathematics</font>
-                            </font>
-                        </span>
-                        <span class="mediumText" style="font-weight: 600">
-                            <font dir="auto" style="vertical-align: inherit;">
-                                <font dir="auto" style="vertical-align: inherit;">Private math lessons</font>
-                            </font>
-                        </span>
+                        <span class="mediumText" style="color: ">מורה פרטי ל</span>
+                        <span class="hugeTitle" style="color: ">מתמטיקה</span>
+                        <span class="mediumText" style="font-weight: 600">שיעורים פרטיים במתמטיקה</span>
                     </h1>
                 </div>
             </div>
             <div class="wrapMiddleContent">
                 <form id="filterForm" action="/מורה-פרטי/" method="GET">
                     <!--teachers filter -->
-                    <div class="wrapResultsTeachers mobileOnly">
+                    <div class="wrapResultsTeachers mobileOnly" style="flex-direction: column;">
                         <!-- <div class="topPartResults">
                             <h1>כל המורים הפרטיים</h1>
                               <h4> </h4>
@@ -253,7 +241,6 @@
                     <!--filter system-->
 
                     <div class="section-filters desktopOnly">
-                        <form name="frmSearch" method="post" id="frm_fat_id_frmSearch">
                             <div class="container--narrow">
                                 <div id="filter-panel" class="filter-panel">
                                     <div class="filter-panel__body">
@@ -19580,14 +19567,7 @@
                                 <br>
                                 <a href="/מורה-פרטי/תחום/הוראה-מתקנת-בחשבון">מורה פרטי להוראה מתקנת בחשבון</a>
                             </div>
-                        </form>
                     </div>
-
-
-
-
-
-
 
 
                     <!--end filter system-->
@@ -20464,6 +20444,55 @@
                 </defs>
             </svg>
         </div>
+        <div class="bottomPart mobileOnly">
+            <h4>.lessoons</h4>
+            <ul>
+
+                <li><a href="/%D7%A2%D7%9C%D7%99%D7%A0%D7%95">עלינו</a></li>
+                <li><a href="/%D7%A6%D7%95%D7%A8-%D7%A7%D7%A9%D7%A8">שירות לקוחות</a></li>
+                <li><a
+                        href="https://lessoons.co.il/%D7%94%D7%A8%D7%A9%D7%9D-%D7%9B%D7%9E%D7%95%D7%A8%D7%94-%D7%A4%D7%A8%D7%98%D7%99">הרשמה
+                        כמורה פרטי</a></li>
+                <li><a href="/%D7%AA%D7%A0%D7%90%D7%99-%D7%A9%D7%99%D7%9E%D7%95%D7%A9">תקנון אתר</a></li>
+                <li><a href="/%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA">מדיניות
+                        פרטיות</a></li>
+                <li><a href="/%D7%A6%D7%95%D7%A8-%D7%A7%D7%A9%D7%A8">משרות פתוחות</a></li>
+
+            </ul>
+
+            <div class="social">
+                <h4>אנחנו, <br>
+                    בסושיאל :)
+                </h4>
+                <div class="socialLinks">
+                    <a href="#" class="inst">
+                        <img src="https://lessoons.co.il/v3/assets/newDesign/IgW.svg">
+                    </a>
+                    <a href="https://www.facebook.com/Lessoons" class="inst">
+                        <img src="https://lessoons.co.il/v3/assets/newDesign/FaceBookW.svg">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=0523001919&amp;text=היי+אשמח+להמלצה+על+" class="inst">
+                        <img src="https://lessoons.co.il/v3/assets/newDesign/WhatsappW.svg">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCVRse3elJBPvBVRuQIV52kg" class="inst">
+                        <img src="https://lessoons.co.il/v3/assets/newDesign/YouTubeW.svg">
+                    </a>
+                </div>
+                <span class="rightRes">כל הזכויות שמורות 2025 © Lessoons</span>
+            </div>
+            <div class="quoteClass">
+                <div class="quoteWhite">
+                    <h4>ספר לי ואשכח, <br>
+                        תדגים לי ואזכור, <br>
+                        שתף אותי ואלמד.
+                    </h4>
+                </div>
+                <div class="bottomLogo">
+                    <img src="https://lessoons.co.il/v3/assets/newDesign/logo18-12.svg">
+                </div>
+                <span>כל יום לומדים משהו חדש</span>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -20473,23 +20502,21 @@
     document.addEventListener("DOMContentLoaded", function () {
         const floatingDiv = document.querySelector(".headerDynamic");
 
-        window.addEventListener("scroll", function () {
-            // Calculate the viewport height
-            const viewportHeight = window.innerHeight;
+        function toggleHeader() {
+            const showAfter = window.innerHeight * 0.6; // 60% of viewport
 
-            // Calculate the scroll position in pixels
-            const scrollPosition = window.scrollY;
-
-            // Calculate the scroll position as a percentage of the viewport height
-            const scrollPercentage = (scrollPosition / viewportHeight) * 100;
-
-            // Check if the scroll percentage is greater than or equal to 60
-            if (scrollPercentage >= 60) {
-                floatingDiv.style.transform = "none";
+            if (window.scrollY > showAfter) {
+                floatingDiv.style.transform = "translateY(0)";
             } else {
                 floatingDiv.style.transform = "translateY(-101%)";
             }
-        });
+        }
+
+        // Run once on page load (prevents flicker)
+        toggleHeader();
+
+        // Run on every scroll
+        window.addEventListener("scroll", toggleHeader);
     });
 
     function getScrollPosition() {
@@ -20507,4 +20534,5 @@
             (isCSS1Compat ? document.body.scrollTop : 0)) + (12.5 * parseFloat(getComputedStyle(document.documentElement).fontSize));
     }
 </script>
+
 </html>

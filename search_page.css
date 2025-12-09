@@ -318,6 +318,7 @@ h6 {
     white-space: nowrap;
 }
 
+
 .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow {
     margin-top: 0;
 }
@@ -685,7 +686,7 @@ a {
 }
 
 .container.searchResults .content .wrapMiddleContent .paginationClass {
-    width: 45%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -1326,6 +1327,7 @@ a {
         gap: 0;
         padding-left: 3.6rem;
         scroll-behavior: smooth;
+        scrollbar-width: none;
     }
 
     .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide.current {
@@ -1358,7 +1360,15 @@ a {
         flex-wrap: nowrap;
         white-space: nowrap;
     }
-
+    .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide.current h4 {
+        font-weight: 600;
+        color: #9747ff;
+        transition: background ease 200ms, color ease 200ms;
+    }
+        .container.searchResults .content .wrapMiddleContent .wrapResultsTeachers .carousel.sliderChooseGrade .slider .slide .gradeContent h4 {
+        margin-top: 0;
+        font-size: 1.6rem;
+    }
     .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow {
         margin-top: 0;
     }
@@ -1904,6 +1914,7 @@ a {
         gap: 0;
         padding-left: 3.6rem;
         scroll-behavior: smooth;
+        scrollbar-width: none;
     }
 
     .container.home .content .sliderPopular .slider,
@@ -2239,6 +2250,137 @@ a {
         text-align: right;
         line-height: 2.6;
     }
+        body .container.home .bottomPart, body .container .bottomPart {
+        width: auto;
+        padding: 3rem 3.6rem 0;
+        margin: 0 -3.6rem -5.3rem;
+        background: #548cff;
+        color: #fff;
+        justify-content: center;
+    }
+        .bottomPart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-top: 0;
+        gap: 2rem;
+        width: 100%;
+    }
+        body .container.home .bottomPart h4, body .container .bottomPart h4 {
+        font-weight: 800 !important;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    body .container.home .bottomPart ul, body .container .bottomPart ul {
+        color: #fff;
+        line-height: 2;
+        margin-top: 1rem;
+    }
+        .bottomPart ul {
+        font-size: 1.6rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        color: #303030;
+    }
+        ul, ol, dd {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+        body .container.home .bottomPart .social, body .container .bottomPart .social {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        min-height: 17rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottomPart .social {
+        width: 100%;
+        margin-top: 5rem;
+        padding-bottom: 0rem;
+    }
+    body .container.home .bottomPart .social .socialLinks, body .container .bottomPart .social .socialLinks {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .bottomPart .social .socialLinks {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-block: 2rem;
+        align-items: baseline;
+    }
+        body .container.home .bottomPart .social .socialLinks img, body .container .bottomPart .social .socialLinks img {
+        height: 3rem;
+    }
+    body .container.home .bottomPart .social span.rightRes, body .container .bottomPart .social span.rightRes {
+        font-size: 1.6rem;
+    }
+    body .container.home .bottomPart .quoteClass, body .container .bottomPart .quoteClass {
+        padding: 3rem 3.6rem 7.3rem;
+        margin: 0 -3.6rem 0;
+        display: flex;
+        width: calc(100% + 7.2rem);
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/FooterWave2.svg);
+        margin-top: 0rem;
+        padding-top: 9rem;
+        position: relative;
+        background-size: cover;
+    }
+        body .container.home .bottomPart .quoteClass .quoteWhite, body .container .bottomPart .quoteClass .quoteWhite {
+        position: relative;
+        margin-bottom: 7rem;
+        margin-top: 6rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+        body .container.home .bottomPart .quoteClass .quoteWhite:before, body .container .bottomPart .quoteClass .quoteWhite:before {
+        content: "";
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/quote.svg);
+        width: 4.5rem;
+        height: 4.5rem;
+        background-size: contain;
+        position: absolute;
+        top: -3rem;
+        right: -5rem;
+        background-repeat: no-repeat;
+    }
+    body .container.home .bottomPart .quoteClass .quoteWhite:after, body .container .bottomPart .quoteClass .quoteWhite:after {
+        content: "";
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/quote.svg);
+        width: 4.5rem;
+        height: 4.5rem;
+        background-size: contain;
+        position: absolute;
+        left: -6rem;
+        bottom: -3rem;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+    }
+        body .container.home .bottomPart .quoteClass .bottomLogo, body .container .bottomPart .quoteClass .bottomLogo {
+        margin-top: 3rem;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+        body .container.home .bottomPart .quoteClass .bottomLogo img, body .container .bottomPart .quoteClass .bottomLogo img {
+        width: 45%;
+        max-width: 266px;
+    }
+        body .container.home .bottomPart .quoteClass span, body .container .bottomPart .quoteClass span {
+        font-size: 2rem;
+        margin-top: 1rem;
+    } 
 }
 
 
