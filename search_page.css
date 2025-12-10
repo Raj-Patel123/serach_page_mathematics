@@ -444,12 +444,16 @@ h6 {
     /* position: relative; */
     display: inline-block;
     margin-bottom: 15px;
+        width: 100%;
+    height: 100%;
 }
 
 .container.searchResults .content .wrapMiddleContent .sliderPopular.goodtoknow .teacherResult .wrapGrey .teacherDetails .profileImg .image img {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 img {
@@ -851,12 +855,359 @@ a {
 
 
 
+    .container.searchResults .header,
+    .container.searchResults .headerDynamic {
+        background: linear-gradient(90deg, #ffb7d5 14%, #548cff 95%);
+        height: 6.9rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        padding-right: 3.1rem;
+        padding-left: 3.1rem;
+        z-index: 100;
+        position: absolute;
+    }
+
+    .container.home .header,
+    .container .header {
+        position: absolute;
+        transition: 500ms transform ease;
+        background: #faf8f5;
+        z-index: 10;
+        padding-block-end: 2rem;
+        transform: translateY(0rem);
+    }
+
+    .container .header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 7rem;
+        padding-top: 5.3rem;
+        padding-inline: 3.6rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .container.searchResults .header a.logo,
+    .container.searchResults .headerDynamic a.logo {
+        height: auto;
+        display: flex;
+    }
+
+    .container .header .logo {
+        width: 12rem;
+        height: auto;
+    }
+
+    .container.searchResults .header a.logo img,
+    .container.searchResults .headerDynamic a.logo img {
+        object-fit: contain;
+        height: auto;
+        object-position: center;
+    }
+
+    body .container.home .header .logo img,
+    body .container .header .logo img {
+        width: 100%;
+    }
+
+    .container.searchResults .header .innerNav,
+    .container.searchResults .headerDynamic .innerNav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 15%;
+        align-items: center;
+    }
+
+    .container.searchResults .header .innerNav .iconSearch,
+    .container.searchResults .headerDynamic .innerNav .iconSearch {
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/MagnifyGlassW.svg);
+        background-color: transparent;
+        position: relative;
+        left: auto;
+        margin: 0;
+        width: 2.2rem;
+        height: 2.2rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0;
+    }
+
+    .container.searchResults .header .innerNav .openMenu,
+    .container.searchResults .headerDynamic .innerNav .openMenu {
+        height: 1.8rem;
+    }
+
+    .container .header .openMenu {
+        width: 2.3rem;
+        height: auto;
+    }
+.container.searchResults .headerDynamic {
+        position: fixed;
+        transform: translateY(-101%);
+    }
+.container.searchResults .headerDynamic video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+    .container.searchResults .headerDynamic:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+ .container.searchResults .content .wrapTopContent {
+        align-items: flex-start;
+        min-height: 35rem;
+        transition: translate 300ms linear;
+        translate: 0 0;
+        z-index: 82;
+    }
+
+    body .container.home .wrapTopContent,
+    body .container .wrapTopContent {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        padding-top: 18vh;
+        padding-bottom: 18vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapVideoTop.clipMaskTop {
+        clip-path: url(#svgClipTop);
+    }
+
+    body .container.home .wrapVideoTop,
+    body .container .wrapVideoTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 7.2rem);
+        height: calc(100% + 5.3rem);
+        margin: -5.3rem -3.6rem;
+        margin-bottom: 0;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapVideoTop:before {
+        content: "";
+        background: linear-gradient(0deg, #0000008c 10%, #0000 60%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapVideoTop video {
+        object-position: center;
+    }
+
+    body .container.home .wrapVideoTop video,
+    body .container .wrapVideoTop video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapCategoryName {
+        transition: translate 300ms linear;
+        position: absolute;
+        color: #fff;
+        bottom: 16%;
+        z-index: 5;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapCategoryName h1.hugeTitle {
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    .container .content h1 {
+        width: 100%;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .container.searchResults .content .wrapTopContent .wrapCategoryName span.mediumText {
+        line-height: 1;
+    }
+
+    span.mediumText {
+        font-size: 1.8rem;
+    }
+
+    span.mediumText {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
 
 
 
 
-
-
+ body .container.home .bottomPart, body .container .bottomPart {
+        width: auto;
+        padding: 3rem 3.6rem 0;
+        margin: 0 -3.6rem -5.3rem;
+        background: #548cff;
+        color: #fff;
+        justify-content: center;
+    }
+        .bottomPart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-top: 0;
+        gap: 2rem;
+        width: 100%;
+    }
+        body .container.home .bottomPart h4, body .container .bottomPart h4 {
+        font-weight: 800 !important;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    body .container.home .bottomPart ul, body .container .bottomPart ul {
+        color: #fff;
+        line-height: 2;
+        margin-top: 1rem;
+    }
+        .bottomPart ul {
+        font-size: 1.6rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        color: #303030;
+    }
+        ul, ol, dd {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+        body .container.home .bottomPart .social, body .container .bottomPart .social {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        min-height: 17rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottomPart .social {
+        width: 100%;
+        margin-top: 5rem;
+        padding-bottom: 0rem;
+    }
+    body .container.home .bottomPart .social .socialLinks, body .container .bottomPart .social .socialLinks {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .bottomPart .social .socialLinks {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-block: 2rem;
+        align-items: baseline;
+    }
+        body .container.home .bottomPart .social .socialLinks img, body .container .bottomPart .social .socialLinks img {
+        height: 3rem;
+    }
+    body .container.home .bottomPart .social span.rightRes, body .container .bottomPart .social span.rightRes {
+        font-size: 1.6rem;
+    }
+    body .container.home .bottomPart .quoteClass, body .container .bottomPart .quoteClass {
+        padding: 3rem 3.6rem 7.3rem;
+        margin: 0 -3.6rem 0;
+        display: flex;
+        width: calc(100% + 7.2rem);
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/FooterWave2.svg);
+        margin-top: 0rem;
+        padding-top: 9rem;
+        position: relative;
+        background-size: cover;
+    }
+        body .container.home .bottomPart .quoteClass .quoteWhite, body .container .bottomPart .quoteClass .quoteWhite {
+        position: relative;
+        margin-bottom: 7rem;
+        margin-top: 6rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+        body .container.home .bottomPart .quoteClass .quoteWhite:before, body .container .bottomPart .quoteClass .quoteWhite:before {
+        content: "";
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/quote.svg);
+        width: 4.5rem;
+        height: 4.5rem;
+        background-size: contain;
+        position: absolute;
+        top: -3rem;
+        right: -5rem;
+        background-repeat: no-repeat;
+    }
+    body .container.home .bottomPart .quoteClass .quoteWhite:after, body .container .bottomPart .quoteClass .quoteWhite:after {
+        content: "";
+        background-image: url(https://lessoons.co.il/v3/assets/newDesign/quote.svg);
+        width: 4.5rem;
+        height: 4.5rem;
+        background-size: contain;
+        position: absolute;
+        left: -6rem;
+        bottom: -3rem;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+    }
+        body .container.home .bottomPart .quoteClass .bottomLogo, body .container .bottomPart .quoteClass .bottomLogo {
+        margin-top: 3rem;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+        body .container.home .bottomPart .quoteClass .bottomLogo img, body .container .bottomPart .quoteClass .bottomLogo img {
+        width: 45%;
+        max-width: 266px;
+    }
+        body .container.home .bottomPart .quoteClass span, body .container .bottomPart .quoteClass span {
+        font-size: 2rem;
+        margin-top: 1rem;
+    } 
 
 
 
