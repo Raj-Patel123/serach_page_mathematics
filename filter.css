@@ -260,6 +260,7 @@ svg:not(:root) {
     background-color: #fff;
     width: 100%;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .filter-dropdown__head {
@@ -1082,10 +1083,6 @@ h6 {
 
 
 @media (min-width: 1199px) {
-    .filter-dropdown {
-        overflow: hidden;
-    }
-
     .filter-dropdown__head {
         border-bottom: 1px solid #e6e6e6;
     }
